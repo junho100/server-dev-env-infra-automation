@@ -63,3 +63,8 @@ variable "domain_name" {
   description = "domain name for connecting service"
   type        = string
 }
+
+variable "api_endpoint_prefix" {
+  description = "api endpoint prefix"
+  type        = string
+}
