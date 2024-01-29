@@ -13,7 +13,7 @@ variable "db_name" {
 variable "db_username" {
   description = "database admin username"
   type        = string
-  default     = "admin"
+  default     = "root"
 }
 
 variable "db_password" {
@@ -68,3 +68,9 @@ variable "api_endpoint_prefix" {
   description = "api endpoint prefix"
   type        = string
 }
+
+variable "env_params" {
+  description = "list of additional environment parameters"
+  type        = map(string)
+}
+
